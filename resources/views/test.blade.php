@@ -8,8 +8,6 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-    <h1 class="text-2xl font-bold underline decoration-sky-500">
-        Hello world!
-      </h1>
+    <livewire:header />
 </body>
 </html>

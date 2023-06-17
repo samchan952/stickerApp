@@ -12,11 +12,17 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
         <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        @vite(['resources/css/app.css','resources/js/app.js'])
+        @livewireStyles
     </head>
     <body>
+        @livewire('nav.header-component')
         <div class="font-sans text-gray-900 antialiased">
             {{ $slot }}
         </div>
+        @livewire('nav.footer-component')
+        {{-- <script src="../path/to/flowbite/dist/flowbite.min.js"></script> --}}
+        <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+        @livewireScripts
     </body>
 </html>
