@@ -17,7 +17,7 @@
     </head>
     <body>
         @livewire('nav.header-component')
-        <div class="font-sans text-gray-900 antialiased">
+        <div class="font-sans text-gray-900 antialiased mb-5">
             {{ $slot }}
         </div>
         @livewire('nav.footer-component')
